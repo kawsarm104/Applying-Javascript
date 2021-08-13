@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section{
+            display: grid;
+            align-items: center;
+        }
+        p{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add your comment</h2>
+    <section class="section">
+    
+    <div>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea><br>
+        <button id="addComment">Add Comment</button>
+    <div>
+        <p id="paragraph">
+            habijabi paragraph Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos magnam ipsam delectus quis, est consequuntur.
+        </p>
+
+    </div>
+    </section>
+    <script>
+        document.getElementById('addComment').
+        addEventListener('click',function(){
+            const textarea = document.getElementById('textarea')
+            console.log(textarea.value)
+            const p = document.createElement('p')
+            p.innerText = textarea.value
+            
+            document.getElementById('paragraph').appendChild(p)
+
+            textarea.value = ''
+
+        })
+    </script>
+</body>
+</html>

@@ -1,16 +1,17 @@
-        //Sher to Mon Convert
+        //Sher to Mon Convert 
 
 function seerToMon(seer){
+    const oneMon = 40 //40 seer = 1 mon  
     if(seer < 0 ){
         return "please enter a positive number"
     }
     else{
-        const mon = seer/40; //40 seer = 1 mon  
+        const mon = seer/oneMon; 
             return mon; 
     }
 }
 
-        // totalSales calculating
+        // totalSales calculating 
 
 function totalSales(numberOfShirt, numberOfPant, numberOfShoe){
     const perShirtPrice = 100;
@@ -25,7 +26,7 @@ function totalSales(numberOfShirt, numberOfPant, numberOfShoe){
 }
 
 
-            // deliveryCost 
+            // deliveryCost  
 
 function deliveryCost(numberOfParcel){
     let parcelCost;
@@ -77,11 +78,12 @@ function perfectFriend(friends){
 
  }
 
-
- const totalMon = seerToMon(15)
+/*
+ const totalMon = seerToMon(120)
 console.log("Total Mon: ", totalMon)  // float value re 1 ghor obodhi dekhamu
 console.log("Total Cost of Shopping: ", totalSales(0,7,0))// kono man khali rakhle error dekhabo 
-const khoroch = deliveryCost(150)
+const khoroch = deliveryCost(1)
 console.log("parcel cost: ",khoroch)   
-friendsname = perfectFriend(["saiful", "testuu","nuriddin","aliee","mohhin"])
+friendsname = perfectFriend(["saiful", "testuu","nuriddin","alieee","mohin"])
 console.log("my bestuuu  friend : ", friendsname)
+*/

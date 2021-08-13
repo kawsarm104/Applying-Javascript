@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    
+    <section>
+        <h2 id="eidaredeletekoram">more events</h2>
+        <input type="text" id="input">
+        <button id="delete" disabled>Delete</button>
+
+    </section>
+    <script>
+        document.getElementById('delete').
+        addEventListener('click',function(){
+            document.getElementById('eidaredeletekoram').style.display='none'
+        })
+        document.getElementById('input').
+        addEventListener('focus',function(){
+            console.log("kaj hoise")
+        })
+        document.getElementById('input').
+        addEventListener('keyup',function(event){
+            // const input = document.getElementById('input')
+            // console.log(input.value)
+            console.log(event.target.value)
+            if(event.target.value == 'delete'){
+                 document.getElementById('delete').removeAttribute('disabled')
+            }
+            else{
+                document.getElementById('delete').setAttribute('disabled',true)
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Er Events</title>
+    <style>
+        p{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <input id="inputfield" type="text">
+    <button id="update">update</button>
+    <p id="paragraph" >
+
+    </p>
+    
+    <script>
+        document.getElementById('update'). // select button
+        addEventListener('click',function(){ 
+            const nameField = document.getElementById('inputfield') // targeted input field
+            // console.log(nameField)
+            // console.log(nameField.value)
+            const p = document.getElementById('paragraph') //targeted the paragraph
+            p.innerText = nameField.value // showing result in paragraph
+            nameField.value = ''
+        })
+    </script>
+</body>
+</html>
